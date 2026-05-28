@@ -1,0 +1,34 @@
+
+# FASTAPI-------------------------------------------------
+
+fastapi
+uvicorn[standard]
+
+# ENV VARIABLES ------------------------------------------
+
+python-dotenv
+
+# LANGCHAIN ----------------------------------------------
+
+langchain
+langchain-community
+langchain-core
+langchain-chroma
+langchain-google-genai
+langchain-huggingface
+
+# VECTOR DATABASE------------------------------------------
+
+chromadb
+
+# EMBEDDINGS ----------------------------------------------
+
+sentence-transformers
+
+# MACHINE LEARNING / TORCH --------------------------------
+
+torch
+
+# DATA VALIDATION------------------------------------------
+
+pydantic
