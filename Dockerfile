@@ -36,6 +36,6 @@ ENV COLLECTION_NAME=ecoscan_knowledge
 ENV EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
 ENV GEMINI_MODEL=gemini-flash-lite-latest
 
-EXPOSE 8000
+EXPOSE 7860
 
-CMD uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}
+CMD uvicorn app.main:app --host 0.0.0.0 --port 7860
