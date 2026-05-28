@@ -38,4 +38,7 @@ ENV GEMINI_MODEL=gemini-flash-lite-latest
 
 EXPOSE 10000
 
-CMD uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-10000}
+COPY start.sh .
+RUN chmod +x start.sh
+
+CMD ["sh", "start.sh"]
