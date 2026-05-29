@@ -57,9 +57,6 @@ def health_check():
 
 @app.post("/chat", response_model=ChatResponse)
 def chat(request: ChatRequest):
-
-    response = chatbot.ask(request.message)
-
-    return ChatResponse(
-        response=response
-    )
+    history = [{"role": m.role, "content": m.content} for m in (request.history or [])]
+    response = chatbot.ask(request.message, history=history)
+    return ChatResponse(response=response)

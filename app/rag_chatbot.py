@@ -1,6 +1,6 @@
 
 import os
-from typing import List
+from typing import List, Optional, Dict
 
 from dotenv import load_dotenv
 
@@ -52,6 +52,8 @@ class EcoScanRAGChatbot:
 
         self.prompt = ChatPromptTemplate.from_template("""
 Tu es EcoBot, l’assistant intelligent de l’application mobile EcoScan Maroc.
+HISTORIQUE DE LA CONVERSATION (pour contexte) :
+{history}
 
 MISSION :
 Aider les utilisateurs marocains à trier, recycler et gérer leurs déchets correctement.
@@ -91,8 +93,9 @@ RÉPONSE ECOBOT :
 
         self.chain = (
             {
-                "context": self.retriever | self._format_documents,
-                "question": RunnablePassthrough()
+                "context": (lambda x: x["question"]) | self.retriever | self._format_documents,
+                "question": lambda x: x["question"],
+                "history": lambda x: x["history"],
             }
             | self.prompt
             | self.llm
@@ -105,12 +108,21 @@ RÉPONSE ECOBOT :
 
         return "\n\n".join(doc.page_content for doc in docs)
 
-    def ask(self, question: str) -> str:
+    def ask(self, question: str, history: Optional[List[Dict]] = None) -> str:
         if not question or not question.strip():
             return "Veuillez écrire une question valide."
 
+        history_text = ""
+        if history:
+            for msg in history[-6:]:  # 6 derniers messages max
+                role = "Utilisateur" if msg.get("role") == "user" else "EcoBot"
+                history_text += f"{role}: {msg.get(‘content’, ‘’)}\n"
+
         try:
-            return self.chain.invoke(question.strip())
+            return self.chain.invoke({
+                "question": question.strip(),
+                "history": history_text,
+            })
 
         except Exception:
             return (
