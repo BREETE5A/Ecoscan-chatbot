@@ -100,6 +100,12 @@ STYLE :
 - Pas de jargon technique inutile.
 - Réponse directe dès la première phrase.
 
+FORMAT OBLIGATOIRE :
+- JAMAIS de markdown : interdit d'utiliser **, *, ##, __, ou tout autre symbole de mise en forme.
+- Texte brut uniquement.
+- Pour les listes, utiliser • ou - uniquement.
+- Les mots importants s'écrivent normalement, sans gras ni italique.
+
 CONTEXTE :
 {context}
 
