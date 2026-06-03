@@ -29,12 +29,15 @@ RUN pip install --no-cache-dir \
 RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')"
 
 COPY app/ ./app/
-COPY chroma_ecoscan/ ./chroma_ecoscan/
+COPY ingest_guide.py .
 
 ENV CHROMA_PATH=./chroma_ecoscan
 ENV COLLECTION_NAME=ecoscan_knowledge
 ENV EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
 ENV GEMINI_MODEL=gemini-flash-lite-latest
+
+# Construire le ChromaDB avec toutes les données du guide au moment du build
+RUN python ingest_guide.py
 
 EXPOSE 10000
 
