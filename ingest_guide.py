@@ -374,8 +374,8 @@ GUIDE_ITEMS = [
     # ── ORGANIQUE ─────────────────────────────────────────────────────────────
     ("item_peels", "Organique", "OUI", "Composteur / Bac marron",
      "Épluchures fruits et légumes | Fruit peels | قشور الفواكه",
-     "65% des déchets marocains. Idéal pour compost maison. Se décompose en 2-6 mois. "
-     "65% of Moroccan waste. Ideal for home compost. Decomposes in 2-6 months."),
+     "plus de 60% des déchets marocains. Idéal pour compost maison. Se décompose en 2-6 mois. "
+     "over 60% of Moroccan waste. Ideal for home compost. Decomposes in 2-6 months."),
 
     ("item_coffee", "Organique", "OUI", "Composteur",
      "Marc de café | Coffee grounds | تفل القهوة",
@@ -869,7 +869,7 @@ Blue bins are rare in Morocco. The ferracha (informal collector) ensures most pa
     ("bin_brown", """TYPE DE BAC — Bac Marron / Composteur (organique)
 Matières acceptées : Épluchures, marc de café, sachets thé, pain, coquilles d'œuf, feuilles mortes.
 PAS : Viande, poisson, produits laitiers, huile, couches.
-65% des déchets marocains sont organiques. Décomposition 2-6 mois.
+plus de 60% des déchets marocains sont organiques. Décomposition 2-6 mois.
 Brown bin: organic waste. Not: meat, fish, dairy, oil, diapers.
 الحاوية البنية: النفايات العضوية. لا: اللحم أو الأسماك أو منتجات الألبان."""),
 
@@ -935,7 +935,7 @@ SNRVD 2019 + PNVDM 2023-2034. Budget: 21.14 billion DH. World Bank: 250M USD (20
 SNRVD 2019 + PNVDM 2023-2034. ميزانية: 21.14 مليار درهم. هدف 2030: 20٪ إعادة تدوير منزلي."""),
 
     ("law_paris", """ACCORD INTERNATIONAL — Accord de Paris (2016)
-Le Maroc s'engage à réduire ses GES de 42% d'ici 2030 (NDC officielle).
+Le Maroc s'engage à réduire ses GES de 45,5% d'ici 2030 (NDC officielle).
 Les déchets représentent environ 4,7% des émissions nationales marocaines.
 Cible ODD 12.5 : réduire de 50% la génération de déchets d'ici 2030 par prévention, réutilisation et recyclage.
 Paris Agreement: Morocco commits to 42% GHG reduction by 2030 (official NDC). Waste = ~4.7% of emissions.
@@ -1008,11 +1008,11 @@ Paper/Cardboard: saves 17 trees per tonne. Decomposes in 3-6 months.
 الورق والكرتون: يُنقذ 17 شجرة لكل طن. يتحلل في 3-6 أشهر."""),
 
     ("impact_organic", """IMPACT ENVIRONNEMENTAL — Déchets organiques
-65% des déchets marocains sont organiques.
+plus de 60% des déchets marocains sont organiques.
 Temps décomposition : 2 à 6 mois au composteur.
 Le compost améliore la qualité des sols et réduit les besoins en engrais chimiques.
-Organic: 65% of Moroccan waste. Decomposes 2-6 months. Compost improves soil.
-العضوي: 65٪ من النفايات المغربية. يتحلل في 2-6 أشهر بالسماد."""),
+Organic: over 60% of Moroccan waste. Decomposes 2-6 months. Compost improves soil.
+العضوي: أكثر من 60٪ من النفايات المغربية. يتحلل في 2-6 أشهر بالسماد."""),
 
     ("impact_electronics", """IMPACT ENVIRONNEMENTAL — Électronique / DEEE
 Bénéfice : 70 kg CO₂ économisés par ordinateur recyclé.
@@ -1057,8 +1057,8 @@ IMPORTANT : 15 et 150 sont DEUX services différents, les DEUX sont valides au M
 • 19  = Police nationale (DGSN)
 • 177 = Gendarmerie Royale
 • 112 = Numéro d'urgence universel (valide depuis mobile au Maroc)
-• 10911 = Marine Royale — Pollution maritime sur les côtes marocaines
-• 0800 00 20 20 = ONEE — Signalement pollution eau/sol (numéro vert gratuit 24h/24)
+• [non confirmé - voir mtedd.gov.ma] = Marine Royale — Pollution maritime sur les côtes marocaines
+• 0537 75 96 00 = ONEE — Signalement pollution eau/sol (numéro vert gratuit 24h/24)
 
 Les centrales 15, 19 et 177 sont interconnectées et se relaient les appels selon le type d'urgence.
 
@@ -1068,7 +1068,7 @@ OFFICIAL MOROCCAN EMERGENCY NUMBERS (verified sources):
 • 19  = National Police (DGSN)
 • 177 = Royal Gendarmerie
 • 112 = Universal emergency (mobile)
-• 0800 00 20 20 = ONEE water/soil pollution (free 24/7)
+• 0537 75 96 00 = ONEE water/soil pollution (free 24/7)
 
 أرقام الطوارئ الرسمية في المغرب (مصادر موثقة):
 • 15  = سمو — الإسعاف الطبي (وزارة الصحة)
@@ -1076,7 +1076,7 @@ OFFICIAL MOROCCAN EMERGENCY NUMBERS (verified sources):
 • 19  = الشرطة الوطنية (DGSN)
 • 177 = الدرك الملكي
 • 112 = رقم الطوارئ الشامل (من الهاتف المحمول)
-• 0800 00 20 20 = المكتب الوطني للكهرباء والماء (تلوث مجاني 24/24)
+• 0537 75 96 00 = المكتب الوطني للكهرباء والماء (تلوث مجاني 24/24)
 
 NÚMEROS DE EMERGENCIA OFICIALES DE MARRUECOS (fuentes verificadas):
 • 15  = SAMU urgencias médicas
@@ -1084,7 +1084,7 @@ NÚMEROS DE EMERGENCIA OFICIALES DE MARRUECOS (fuentes verificadas):
 • 19  = Policía Nacional (DGSN)
 • 177 = Gendarmería Real
 • 112 = Número universal de emergencias (móvil)
-• 0800 00 20 20 = ONEE contaminación agua/suelo (gratuito 24h)"""),
+• 0537 75 96 00 = ONEE contaminación agua/suelo (gratuito 24h)"""),
 
     ("urgence_enfants_femmes", """NUMÉROS SPÉCIAUX D'URGENCE AU MAROC
 
@@ -1118,11 +1118,11 @@ NÚMEROS ESPECIALES (MARRUECOS):
 
     ("urgence_environnement", """NUMÉROS D'URGENCE ENVIRONNEMENTALE AU MAROC
 
-• 0800 00 20 20 = ONEE (Office National Électricité et Eau Potable)
+• 0537 75 96 00 = ONEE (Office National Électricité et Eau Potable)
                   Signalement pollution eau, sol, déversements chimiques.
                   Email : info@onee.ma — Gratuit 24h/24 — National
 
-• 10911 = Marine Royale — Pollution maritime
+• [non confirmé - voir mtedd.gov.ma] = Marine Royale — Pollution maritime
            Signalement déversements en mer ou sur les côtes atlantique et méditerranée.
            Disponible 24h/24.
 
@@ -1132,24 +1132,24 @@ NÚMEROS ESPECIALES (MARRUECOS):
 • Wilaya de Rabat : 0537 72 72 72
   Urgences environnement, pollutions, décharges sauvages dans la région Rabat.
 
-• MTEDD (Ministère Transition Énergétique) : 0537 57 93 00
-  Email : info@environnement.gov.ma — www.environnement.gov.ma
+• MTEDD (Ministère Transition Énergétique) : 0537 57 04 68
+  Email : mtedd.gov.ma — www.mtedd.gov.ma
   Agréments, réglementations, plans directeurs déchets.
 
 ENVIRONMENTAL EMERGENCY NUMBERS (MOROCCO):
-• 0800 00 20 20 = ONEE water/soil pollution (free 24/7) — info@onee.ma
-• 10911 = Royal Navy marine pollution
-• MTEDD Ministry: 0537 57 93 00 — info@environnement.gov.ma
+• 0537 75 96 00 = ONEE water/soil pollution (free 24/7) — info@onee.ma
+• [non confirmé - voir mtedd.gov.ma] = Royal Navy marine pollution
+• MTEDD Ministry: 0537 57 04 68 — mtedd.gov.ma
 
 أرقام طوارئ البيئة (المغرب):
-• 0800 00 20 20 = المكتب الوطني للكهرباء والماء — تلوث مائي أو أرضي (مجاني 24/24) — info@onee.ma
-• 10911 = القوات البحرية الملكية — التلوث البحري
-• وزارة الانتقال الطاقي: 0537 57 93 00 — info@environnement.gov.ma
+• 0537 75 96 00 = المكتب الوطني للكهرباء والماء — تلوث مائي أو أرضي (مجاني 24/24) — info@onee.ma
+• [non confirmé - voir mtedd.gov.ma] = القوات البحرية الملكية — التلوث البحري
+• وزارة الانتقال الطاقي: 0537 57 04 68 — mtedd.gov.ma
 
 NÚMEROS EMERGENCIA AMBIENTAL (MARRUECOS):
-• 0800 00 20 20 = ONEE contaminación agua/suelo (gratuito 24h) — info@onee.ma
-• 10911 = Marina Real contaminación marítima
-• Ministerio MTEDD: 0537 57 93 00 — info@environnement.gov.ma"""),
+• 0537 75 96 00 = ONEE contaminación agua/suelo (gratuito 24h) — info@onee.ma
+• [non confirmé - voir mtedd.gov.ma] = Marina Real contaminación marítima
+• Ministerio MTEDD: 0537 57 04 68 — mtedd.gov.ma"""),
 ]
 
 
