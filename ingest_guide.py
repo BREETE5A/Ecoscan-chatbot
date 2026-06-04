@@ -1041,6 +1041,118 @@ Dangerous waste: 1L motor oil pollutes 1 million L water. 1 battery contaminates
 # FONCTIONS UTILITAIRES
 # ═══════════════════════════════════════════════════════════════════════════════
 
+# ═══════════════════════════════════════════════════════════════════════════════
+# 7. NUMÉROS D'URGENCE OFFICIELS DU MAROC (sources vérifiées)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+URGENCE_DOCS = [
+    ("urgence_principaux", """NUMÉROS D'URGENCE OFFICIELS DU MAROC (vérifiés — sources gouvernementales)
+
+IMPORTANT : 15 et 150 sont DEUX services différents, les DEUX sont valides au Maroc.
+
+• 15  = SAMU — Urgences médicales (ambulances, soins d'urgence)
+         Source : Ministère de la Santé (sante.gov.ma)
+• 150 = Protection Civile / Pompiers (incendies, sauvetage, catastrophes)
+         Source : Direction Générale de la Protection Civile
+• 19  = Police nationale (DGSN)
+• 177 = Gendarmerie Royale
+• 112 = Numéro d'urgence universel (valide depuis mobile au Maroc)
+• 10911 = Marine Royale — Pollution maritime sur les côtes marocaines
+• 0800 00 20 20 = ONEE — Signalement pollution eau/sol (numéro vert gratuit 24h/24)
+
+Les centrales 15, 19 et 177 sont interconnectées et se relaient les appels selon le type d'urgence.
+
+OFFICIAL MOROCCAN EMERGENCY NUMBERS (verified sources):
+• 15  = SAMU medical emergencies
+• 150 = Civil Protection / Fire brigade
+• 19  = National Police (DGSN)
+• 177 = Royal Gendarmerie
+• 112 = Universal emergency (mobile)
+• 0800 00 20 20 = ONEE water/soil pollution (free 24/7)
+
+أرقام الطوارئ الرسمية في المغرب (مصادر موثقة):
+• 15  = سمو — الإسعاف الطبي (وزارة الصحة)
+• 150 = الوقاية المدنية / الإطفاء
+• 19  = الشرطة الوطنية (DGSN)
+• 177 = الدرك الملكي
+• 112 = رقم الطوارئ الشامل (من الهاتف المحمول)
+• 0800 00 20 20 = المكتب الوطني للكهرباء والماء (تلوث مجاني 24/24)
+
+NÚMEROS DE EMERGENCIA OFICIALES DE MARRUECOS (fuentes verificadas):
+• 15  = SAMU urgencias médicas
+• 150 = Protección Civil / Bomberos
+• 19  = Policía Nacional (DGSN)
+• 177 = Gendarmería Real
+• 112 = Número universal de emergencias (móvil)
+• 0800 00 20 20 = ONEE contaminación agua/suelo (gratuito 24h)"""),
+
+    ("urgence_enfants_femmes", """NUMÉROS SPÉCIAUX D'URGENCE AU MAROC
+
+• 2511 = Enfants en danger — Observatoire National des Droits de l'Enfant (ONDE)
+          Signalement violence, maltraitance, exploitation envers les mineurs.
+          Site officiel : www.2511.ma — géré sous la présidence de SAR la Princesse Lalla Meryem.
+          Source : maroc.ma (portail officiel gouvernement) / onde.ma
+
+• 08000 8888 = Femmes victimes de violence — Numéro vert national gratuit
+               Encadré par la Loi n°103.13 (lutte contre la violence faite aux femmes).
+               Coordonné par : Ministère de la Solidarité, Ministère de la Santé, DGSN, Gendarmerie, Entraide Nationale.
+               Source : social.gov.ma (Ministère de la Solidarité et de l'Égalité)
+
+• 141 = Soutien psychologique / Prévention du suicide / Santé mentale (24h/24)
+         NE PAS confondre avec le SAMU (15). Service distinct.
+
+SPECIAL EMERGENCY NUMBERS (MOROCCO):
+• 2511 = Children in danger (ONDE) — www.2511.ma
+• 08000 8888 = Women victims of violence (Law 103.13)
+• 141 = Psychological support / suicide prevention
+
+أرقام خاصة بالطوارئ (المغرب):
+• 2511 = الأطفال في خطر (المرصد الوطني لحقوق الطفل) — www.2511.ma
+• 08000 8888 = النساء ضحايا العنف (القانون 103.13)
+• 141 = الدعم النفسي / الوقاية من الانتحار
+
+NÚMEROS ESPECIALES (MARRUECOS):
+• 2511 = Niños en peligro (ONDE) — www.2511.ma
+• 08000 8888 = Mujeres víctimas de violencia (Ley 103.13)
+• 141 = Apoyo psicológico / prevención del suicidio"""),
+
+    ("urgence_environnement", """NUMÉROS D'URGENCE ENVIRONNEMENTALE AU MAROC
+
+• 0800 00 20 20 = ONEE (Office National Électricité et Eau Potable)
+                  Signalement pollution eau, sol, déversements chimiques.
+                  Email : info@onee.ma — Gratuit 24h/24 — National
+
+• 10911 = Marine Royale — Pollution maritime
+           Signalement déversements en mer ou sur les côtes atlantique et méditerranée.
+           Disponible 24h/24.
+
+• Wilaya de Casablanca : 0522 22 36 36
+  Urgences environnement, pollutions, décharges sauvages dans la région Casa.
+
+• Wilaya de Rabat : 0537 72 72 72
+  Urgences environnement, pollutions, décharges sauvages dans la région Rabat.
+
+• MTEDD (Ministère Transition Énergétique) : 0537 57 93 00
+  Email : info@environnement.gov.ma — www.environnement.gov.ma
+  Agréments, réglementations, plans directeurs déchets.
+
+ENVIRONMENTAL EMERGENCY NUMBERS (MOROCCO):
+• 0800 00 20 20 = ONEE water/soil pollution (free 24/7) — info@onee.ma
+• 10911 = Royal Navy marine pollution
+• MTEDD Ministry: 0537 57 93 00 — info@environnement.gov.ma
+
+أرقام طوارئ البيئة (المغرب):
+• 0800 00 20 20 = المكتب الوطني للكهرباء والماء — تلوث مائي أو أرضي (مجاني 24/24) — info@onee.ma
+• 10911 = القوات البحرية الملكية — التلوث البحري
+• وزارة الانتقال الطاقي: 0537 57 93 00 — info@environnement.gov.ma
+
+NÚMEROS EMERGENCIA AMBIENTAL (MARRUECOS):
+• 0800 00 20 20 = ONEE contaminación agua/suelo (gratuito 24h) — info@onee.ma
+• 10911 = Marina Real contaminación marítima
+• Ministerio MTEDD: 0537 57 93 00 — info@environnement.gov.ma"""),
+]
+
+
 def build_item_doc(doc_id, category, status, bin_name, names, tips):
     content = (
         f"GUIDE DE TRI — {category} : {names}\n"
@@ -1100,6 +1212,11 @@ def main():
     print("🌍 Préparation des impacts environnementaux...")
     for doc_id, content in IMPACT_DOCS:
         docs.append(build_generic_doc(doc_id, content, "impact"))
+
+    # Numéros d'urgence
+    print("🚨 Préparation des numéros d'urgence officiels du Maroc...")
+    for doc_id, content in URGENCE_DOCS:
+        docs.append(build_generic_doc(doc_id, content, "urgence"))
 
     print(f"\n✅ {len(docs)} documents préparés.")
     print("💾 Ingestion dans ChromaDB...")
