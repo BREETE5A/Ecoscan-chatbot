@@ -117,7 +117,9 @@ RÉPONSE ECOBOT :
 
         self.chain = (
             {
-                "context": (lambda x: x["question"]) | self.retriever | self._format_documents,
+                # retrieval_q = termes français purs (pas darija) → meilleure recherche vectorielle
+                "context": (lambda x: x["retrieval_q"]) | self.retriever | self._format_documents,
+                # question originale → Gemini répond dans la langue de l'utilisateur
                 "question": lambda x: x["question"],
                 "history": lambda x: x["history"],
             }
@@ -208,15 +210,22 @@ RÉPONSE ECOBOT :
         "سلام عليكم": "bonjour salut assistant",
     }
 
-    def _enrich_query(self, question: str) -> str:
-        """Ajoute les termes français/arabes correspondants aux mots darija pour améliorer la recherche vectorielle."""
-        q_lower = question.lower()
+    def _build_retrieval_query(self, question: str) -> str:
+        """
+        Construit la requête UNIQUEMENT pour ChromaDB.
+        Si la question contient de la darija → utilise seulement les termes français mappés.
+        Si pas de darija détectée → utilise la question originale.
+        Séparer retrieval_q de la question originale permet au modèle de répondre
+        dans la langue de l'utilisateur tout en trouvant les bons documents.
+        """
         extra_terms = []
         for darija_term, french_term in self._DARIJA_MAP.items():
-            if darija_term in q_lower or darija_term in question:
+            if darija_term in question:
                 extra_terms.append(french_term)
+
         if extra_terms:
-            return f"{question} | {' | '.join(extra_terms)}"
+            # Seulement les termes français → embedding de meilleure qualité
+            return ' '.join(extra_terms)
         return question
 
     def _format_documents(self, docs: List[Document]) -> str:
@@ -235,12 +244,14 @@ RÉPONSE ECOBOT :
                 role = "Utilisateur" if msg.get("role") == "user" else "EcoBot"
                 history_text += f"{role}: {msg.get('content', '')}\n"
 
-        enriched = self._enrich_query(question.strip())
+        original_q  = question.strip()
+        retrieval_q = self._build_retrieval_query(original_q)
 
         try:
             return self.chain.invoke({
-                "question": enriched,
-                "history": history_text,
+                "question":   original_q,   # question originale → Gemini répond dans la bonne langue
+                "retrieval_q": retrieval_q,  # termes français purs → ChromaDB trouve les bons docs
+                "history":    history_text,
             })
 
         except Exception as e:
