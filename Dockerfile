@@ -25,15 +25,15 @@ RUN pip install --no-cache-dir \
     sentence-transformers \
     pydantic
 
-# Pré-télécharger le modèle d'embedding pour éviter le cold start
-RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')"
+# Pré-télécharger le modèle multilingue (supporte FR, EN, AR, ES, Darija)
+RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2')"
 
 COPY app/ ./app/
 COPY ingest_guide.py .
 
 ENV CHROMA_PATH=./chroma_ecoscan
 ENV COLLECTION_NAME=ecoscan_knowledge
-ENV EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
+ENV EMBEDDING_MODEL=sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 ENV GEMINI_MODEL=gemini-flash-lite-latest
 
 # Construire le ChromaDB avec toutes les données du guide au moment du build

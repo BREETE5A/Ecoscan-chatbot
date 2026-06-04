@@ -118,11 +118,10 @@ QUESTION :
 RÉPONSE ECOBOT :
 """)
 
+        # Modèle multilingue → la question originale (FR/EN/AR/ES/Darija) est utilisée directement
         self.chain = (
             {
-                # retrieval_q = termes français purs (pas darija) → meilleure recherche vectorielle
-                "context": (lambda x: x["retrieval_q"]) | self.retriever | self._format_documents,
-                # question originale → Gemini répond dans la langue de l'utilisateur
+                "context": (lambda x: x["question"]) | self.retriever | self._format_documents,
                 "question": lambda x: x["question"],
                 "history": lambda x: x["history"],
             }
@@ -130,106 +129,6 @@ RÉPONSE ECOBOT :
             | self.llm
             | StrOutputParser()
         )
-
-    # ── Mapping darija → termes de recherche enrichis ─────────────────────────
-    _DARIJA_MAP = {
-        # Plastique
-        "قوارير": "bouteilles plastique PET",
-        "بلاسطيك": "plastique recyclable",
-        "كيسان": "sacs plastique interdits Loi 77-15",
-        "كيسة": "sac plastique",
-        "كيس": "sac plastique",
-        "بلاستيكة": "emballage plastique",
-        # Verre
-        "قاروة": "bouteille verre colonne verte",
-        "قواري زجاج": "bouteilles verre recyclage",
-        # Métal
-        "علبة": "canette métal bac jaune ECOVAL",
-        "علب": "canettes métal aluminium recyclage",
-        "قصدير": "métal recyclable bac jaune",
-        "كانيطة": "canette aluminium",
-        "صفيح": "métal ferraille recyclage",
-        # Papier / Carton
-        "كارطون": "carton papier ferracha recyclage",
-        "كارتون": "carton recyclable ferracha",
-        "ورقة": "papier recyclage ferracha",
-        "جرنان": "journaux magazines recyclage",
-        # Organique
-        "قشر": "épluchures fruits légumes composteur",
-        "خضرة": "déchets organiques composteur",
-        "بقايا الكلة": "restes alimentaires organiques composteur",
-        # Électronique
-        "تيليفون": "téléphone smartphone DEEE Eco Zalagh",
-        "تلفون": "téléphone portable DEEE",
-        "كومبيوتر": "ordinateur DEEE recyclage électronique",
-        "شاشة": "écran TV DEEE recyclage",
-        "لابتوب": "laptop ordinateur DEEE",
-        "تابليت": "tablette iPad DEEE",
-        "جهاز خايب": "appareil électronique usagé DEEE",
-        "موبايل خايب": "smartphone usagé DEEE Eco Zalagh",
-        # Textile
-        "حوايج": "vêtements textile borne collecte",
-        "ليباس": "vêtements habits textile recyclage",
-        "ثياب": "vêtements textile don association",
-        "صبادر": "chaussures textile recyclage",
-        "جلابة": "djellaba textile recyclage sadaqa",
-        # Dangereux
-        "دوا خايب": "médicaments périmés pharmacie agréée",
-        "دوا": "médicaments dangereux pharmacie",
-        "دواء": "médicaments périmés pharmacie",
-        "صبغة": "peinture vernis déchetterie dangereux",
-        "زيت المحرك": "huile moteur usagée garage agréé",
-        "حقنة": "seringues DASRI pharmacie",
-        # Piles
-        "بيلة": "pile batterie collecteur Marjane",
-        "بيلات": "piles batteries recyclage collecteur",
-        "باطاري": "batterie Li-ion DEEE collecteur",
-        # Mots génériques
-        "زبل": "déchets tri recyclage Maroc",
-        "نفاية": "déchets recyclage tri sélectif",
-        "قمامة": "ordures déchets tri recyclage",
-        "وين نحط": "où déposer recycler",
-        "فين نحط": "où déposer recycler",
-        "واش نرمي": "où jeter recycler",
-        "وين نرمي": "où jeter déchets recyclage",
-        "كيفاش نريسيكلي": "comment recycler trier déchets",
-        "ريسيكلاج": "recyclage tri déchets Maroc",
-        "فرز": "tri sélectif recyclage",
-        # Navigation app
-        "كلمة السر": "mot de passe changer paramètres profil",
-        "باسوورد": "mot de passe changer paramètres",
-        "بدل الاسم": "modifier profil nom photo",
-        "بدل صورة": "modifier photo profil éditer",
-        "شحال ريسيكليت": "statistiques recyclage CO2 économisé",
-        "نقط ديالي": "récompenses points badges statistiques",
-        "وين نلقى": "carte map points collecte",
-        "شالنج": "défis challenges écologiques",
-        "بيع": "marketplace vendre objets recyclés",
-        "شرا": "marketplace acheter objets recyclés",
-        # Salutations darija
-        "آش حال": "bonjour assistant aide",
-        "لاباس": "bonjour salut assistant",
-        "كيداير": "bonjour salut assistant",
-        "سلام عليكم": "bonjour salut assistant",
-    }
-
-    def _build_retrieval_query(self, question: str) -> str:
-        """
-        Construit la requête UNIQUEMENT pour ChromaDB.
-        Si la question contient de la darija → utilise seulement les termes français mappés.
-        Si pas de darija détectée → utilise la question originale.
-        Séparer retrieval_q de la question originale permet au modèle de répondre
-        dans la langue de l'utilisateur tout en trouvant les bons documents.
-        """
-        extra_terms = []
-        for darija_term, french_term in self._DARIJA_MAP.items():
-            if darija_term in question:
-                extra_terms.append(french_term)
-
-        if extra_terms:
-            # Seulement les termes français → embedding de meilleure qualité
-            return ' '.join(extra_terms)
-        return question
 
     def _format_documents(self, docs: List[Document]) -> str:
         if not docs:
@@ -247,14 +146,10 @@ RÉPONSE ECOBOT :
                 role = "Utilisateur" if msg.get("role") == "user" else "EcoBot"
                 history_text += f"{role}: {msg.get('content', '')}\n"
 
-        original_q  = question.strip()
-        retrieval_q = self._build_retrieval_query(original_q)
-
         try:
             return self.chain.invoke({
-                "question":   original_q,   # question originale → Gemini répond dans la bonne langue
-                "retrieval_q": retrieval_q,  # termes français purs → ChromaDB trouve les bons docs
-                "history":    history_text,
+                "question": question.strip(),
+                "history":  history_text,
             })
 
         except Exception as e:
