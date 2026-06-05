@@ -66,19 +66,19 @@ To scan waste with AI: tap the camera button in the center navigation bar.
 Para escanear un residuo con IA: pulsa el botón de cámara en la barra de navegación central."""),
 
     ("nav_barcode", """NAVIGATION APP ECOSCAN — Scanner un code-barres produit alimentaire
-Pour scanner le code-barres d'un produit (Nutri-Score, Eco-Score), allez dans : Scanner → Code-barres.
+Pour scanner le code-barres d'un produit (Nutri-Score, Eco-Score), allez dans : Accueil → Code-barres.
 Route technique : /barcode
-To scan a product barcode: Scan → Barcode.
-لمسح الباركود: المسح ← الباركود.
-Para escanear código de barras: Escanear → Código de barras."""),
+To scan a product barcode: Home → Barcode.
+لمسح الرمز الشريطي: الرئيسية ← الرمز الشريطي.
+Para escanear código de barras: Inicio → Código de barras."""),
 
     ("nav_guide", """NAVIGATION APP ECOSCAN — Guide de tri des déchets
-Le guide de tri complet est accessible depuis le menu principal → Guide.
+Le guide de tri complet est accessible depuis : Accueil → Guide de Tri.
 Vous y trouverez : 70+ déchets par catégorie, conseils de tri, lois marocaines, contacts des opérateurs.
 Route technique : /guide
-The sorting guide is in: Menu → Guide.
-دليل الفرز: القائمة ← الدليل.
-La guía de clasificación: Menú → Guía."""),
+The sorting guide is in: Home → Sorting Guide.
+دليل الفرز في: الرئيسية ← دليل الفرز.
+La guía de clasificación: Inicio → Guía de reciclaje."""),
 
     ("nav_map", """NAVIGATION APP ECOSCAN — Carte des points de collecte
 Pour trouver les points de collecte ECOVAL, déchetteries et bornes textiles près de chez vous, allez dans : Carte.
@@ -88,46 +88,46 @@ To find collection points near you: tap the Map tab.
 Para encontrar puntos de recogida: ir a Mapa."""),
 
     ("nav_stats", """NAVIGATION APP ECOSCAN — Statistiques de recyclage
-Pour voir vos statistiques de recyclage (nombre de scans, CO₂ économisé, matériaux), allez dans : Statistiques.
+Pour voir vos statistiques de recyclage (nombre de scans, CO₂ économisé, matériaux), allez dans : Accueil → Statistiques.
 Route technique : /stats
-To see your recycling stats: go to the Stats tab.
-لرؤية إحصائيات التدوير: اذهب إلى علامة الإحصائيات.
-Para ver tus estadísticas de reciclaje: ir a Estadísticas."""),
+To see your recycling stats: Home → Statistics.
+لرؤية إحصائيات التدوير: الرئيسية ← الإحصائيات.
+Para ver tus estadísticas de reciclaje: Inicio → Estadísticas."""),
 
     ("nav_badges", """NAVIGATION APP ECOSCAN — Mes badges et récompenses
-Pour voir vos badges obtenus, allez dans : Profil → Mes badges.
+Pour voir vos badges obtenus, allez dans : Accueil → Badges.
 Route technique : /badges
-To see your earned badges: Profile → My Badges.
-لرؤية الشارات المكتسبة: الملف الشخصي ← شاراتي.
-Para ver tus insignias: Perfil → Mis insignias."""),
+To see your earned badges: Home → Badges.
+لرؤية الشارات المكتسبة: الرئيسية ← الشارات.
+Para ver tus insignias: Inicio → Insignias."""),
 
     ("nav_leaderboard", """NAVIGATION APP ECOSCAN — Classement / Leaderboard
-Pour voir le classement des meilleurs recycleurs, allez dans : Classement.
+Pour voir le classement des meilleurs recycleurs, allez dans : Accueil → Classement.
 Route technique : /leaderboard
-To see the recyclers ranking: go to Leaderboard.
-لرؤية ترتيب المدوّرين: اذهب إلى لوحة المتصدرين.
-Para ver el ranking de recicladores: ir a Clasificación."""),
+To see the recyclers ranking: Home → Leaderboard.
+لرؤية ترتيب المدوّرين: الرئيسية ← الترتيب.
+Para ver el ranking de recicladores: Inicio → Clasificación."""),
 
     ("nav_challenges", """NAVIGATION APP ECOSCAN — Défis écologiques
-Pour voir et relever les défis écologiques, allez dans : Défis.
+Pour voir et relever les défis écologiques, allez dans : Accueil → Défis.
 Route technique : /challenges
-To see and complete eco challenges: go to Challenges.
-لرؤية التحديات البيئية: اذهب إلى التحديات.
-Para ver los retos ecológicos: ir a Retos."""),
+To see and complete eco challenges: Home → Challenges.
+لرؤية التحديات البيئية: الرئيسية ← التحديات.
+Para ver los retos ecológicos: Inicio → Desafíos."""),
 
     ("nav_rewards", """NAVIGATION APP ECOSCAN — Récompenses et points
-Pour voir vos points et récompenses, allez dans : Récompenses.
+Pour voir vos points et récompenses, allez dans : Accueil → Récompenses.
 Route technique : /rewards
-To see your points and rewards: go to Rewards.
-لرؤية نقاطك ومكافآتك: اذهب إلى المكافآت.
-Para ver tus puntos y recompensas: ir a Recompensas."""),
+To see your points and rewards: Home → Rewards.
+لرؤية نقاطك ومكافآتك: الرئيسية ← المكافآت.
+Para ver tus puntos y recompensas: Inicio → Recompensas."""),
 
     ("nav_history", """NAVIGATION APP ECOSCAN — Historique des scans
-Pour voir l'historique de tous vos scans précédents, allez dans : Profil → Historique.
+Pour voir l'historique de tous vos scans précédents, allez dans : Accueil → Historique.
 Route technique : /history
-To see your scan history: Profile → History.
-لرؤية سجل المسح: الملف الشخصي ← السجل.
-Para ver el historial de escaneos: Perfil → Historial."""),
+To see your scan history: Home → History.
+لرؤية سجل المسح: الرئيسية ← السجل.
+Para ver el historial de escaneos: Inicio → Historial."""),
 
     ("nav_air_quality", """NAVIGATION APP ECOSCAN — Qualité de l'air
 Pour voir la qualité de l'air dans votre ville, allez dans : Accueil → Qualité de l'air.
@@ -151,11 +151,11 @@ For weather and eco tips: Home → Weather.
 Para el tiempo y consejos ecológicos: Inicio → Tiempo."""),
 
     ("nav_quiz", """NAVIGATION APP ECOSCAN — Quiz écologique
-Pour tester vos connaissances sur l'environnement (25 questions), allez dans : Guide → Quiz.
+Pour tester vos connaissances sur l'environnement (25 questions), allez dans : Accueil → Quiz recyclage.
 Route technique : /quiz
-To take the eco quiz (25 questions): Guide → Quiz.
-لأخذ اختبار بيئي (25 سؤال): الدليل ← الاختبار.
-Para el quiz ecológico (25 preguntas): Guía → Quiz."""),
+To take the eco quiz (25 questions): Home → Recycling quiz.
+لأخذ اختبار بيئي (25 سؤال): الرئيسية ← اختبار التدوير.
+Para el quiz ecológico (25 preguntas): Inicio → Quiz de reciclaje."""),
 
     ("nav_marketplace", """NAVIGATION APP ECOSCAN — Marketplace objets recyclés
 Pour acheter ou vendre des objets recyclés / seconde main, allez dans : Marketplace.
