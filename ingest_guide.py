@@ -284,6 +284,19 @@ Programmes de compostage communautaire.
 Zero Zbel NGO sorting awareness Morocco. Email: contact@zerozabel.ma.
 جمعية زيرو زبل للتوعية بالفرز. البريد: contact@zerozabel.ma"""),
 
+    ("op_onee", """CONTACT INSTITUTION — ONEE (Office National de l'Électricité et de l'Eau Potable) (vérifié)
+Rôle : Gestion nationale eau potable et électricité — signalement pollution eau et sol — National
+Téléphone : 0537 75 96 00
+Email : info@onee.ma — onee.ma
+L'ONEE est l'organisme public responsable de la production et distribution d'eau potable au Maroc.
+Signalement pollution eau, sol, déversements chimiques (numéro vert gratuit 24h/24).
+Pour les problèmes de facturation eau ou coupures : contacter votre régie locale (LYDEC à Casablanca, REDAL à Rabat, AMENDIS à Tanger).
+ONEE Morocco — water and electricity national office. Tel: 0537 75 96 00 — info@onee.ma — onee.ma
+Water pollution reporting, water supply issues. For billing: contact local utility (LYDEC, REDAL, AMENDIS).
+Darija: ONEE hiya li mklfa b lma u lkahba f lmaghrib. Ila 3ndek mochkil f lma aw talawoth: 0537 75 96 00.
+المكتب الوطني للكهرباء والماء الصالح للشرب. هاتف: 0537 75 96 00 — info@onee.ma — onee.ma
+المسؤول عن توزيع الماء والكهرباء على المستوى الوطني. للإبلاغ عن تلوث المياه أو للطوارئ المائية."""),
+
     ("op_encombrants", """CONTACT COLLECTE ENCOMBRANTS (matelas, meubles volumineux)
 Casablanca : Contacter AVERDA au 0522 92 32 60 ou utiliser l'application "Casa Mdinti" (Android/iOS).
 Rabat : Contacter ARMA Environnement au 0537 66 32 90 ou email contact@arma.ma
