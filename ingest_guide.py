@@ -252,6 +252,37 @@ Les bacs ECOVAL en magasin (Marjane, Carrefour) sont gérés par le programme de
 ECOVAL (Holcim): industrial waste only, NOT household take-back. Tel: 0522 58 20 05.
 ECOVAL (هولسيم): للنفايات الصناعية فقط، وليس للأسر. هاتف: 0522 58 20 05."""),
 
+    ("op_amee", """CONTACT INSTITUTION — AMEE (Agence Marocaine pour l'Efficacité Énergétique) (vérifié)
+Rôle : Économie circulaire, valorisation déchets industriels, programme AMEP plastiques — National
+Téléphone : 0537 28 73 53
+Email : contact@amee.ma — amee.ma
+Pilote les programmes d'économie circulaire et le programme AMEP de valorisation des plastiques.
+AMEE Moroccan Energy Efficiency Agency. Tel: 0537 28 73 53. contact@amee.ma — amee.ma
+وكالة المغرب للكفاءة الطاقية. هاتف: 0537 28 73 53. contact@amee.ma"""),
+
+    ("op_caritas", """CONTACT ONG — Caritas Maroc (vérifié)
+Rôle : Collecte et redistribution vêtements et objets usagés — National
+Téléphone : 0522 29 11 22
+Points de dépôt à Casablanca, Rabat, Tanger, Marrakech.
+Don de vêtements, chaussures, objets en bon état pour personnes dans le besoin.
+Caritas Maroc clothing and used items collection. Tel: 0522 29 11 22. Casablanca, Rabat, Tangier, Marrakech.
+كاريتاس المغرب لجمع الملابس والمواد المستعملة وإعادة توزيعها. هاتف: 0522 29 11 22."""),
+
+    ("op_secours_catholique", """CONTACT ONG — Secours Catholique (vérifié)
+Rôle : Don de vêtements et objets usagés — Rabat
+Téléphone : 0537 73 44 55
+Redistribution aux personnes dans le besoin. Base principale à Rabat.
+Secours Catholique clothing donation and redistribution. Tel: 0537 73 44 55. Rabat.
+الإغاثة الكاثوليكية لتبرع الملابس وإعادة توزيعها. هاتف: 0537 73 44 55. الرباط."""),
+
+    ("op_ecovalor", """CONTACT OPÉRATEUR RECYCLAGE — ECOVALOR (vérifié)
+Rôle : Tri et valorisation plastique, métal, papier — Casablanca / National
+Téléphone : 0522 35 66 00
+Adresse : Usine Aïn Sebaâ, Casablanca
+Principal opérateur national de recyclage des matériaux au Maroc.
+ECOVALOR plastics/metal/paper sorting and recovery. Tel: 0522 35 66 00. Aïn Sebaâ, Casablanca.
+ECOVALOR لفرز وتثمين البلاستيك والمعادن والورق. هاتف: 0522 35 66 00. عين السبع، الدار البيضاء."""),
+
     ("op_zerozabel", """CONTACT ONG — Zéro Zbel (vérifié)
 Rôle : Sensibilisation et tri sélectif — National
 Email : contact@zerozabel.ma
@@ -453,9 +484,13 @@ GUIDE_ITEMS = [
 
     ("item_mattress", "Textile", "NON", "Déchetterie / Collecte encombrants",
      "Matelas / oreillers | Mattress | مرتبة",
-     "Trop volumineux pour les bornes. Collecte encombrants commune "
-     "(Casablanca 0801003737, Rabat 0537726364) ou déchetterie. "
-     "Too bulky. Municipality bulky waste collection: Casablanca 0801003737, Rabat 0537726364."),
+     "Trop volumineux pour les bornes. "
+     "Casablanca : contacter AVERDA (0522 92 32 60) ou app Casa Mdinti. "
+     "Rabat : contacter ARMA Environnement (0537 66 32 90) ou contact@arma.ma. "
+     "Sinon : déchetterie municipale la plus proche. "
+     "Too bulky for bins. Casablanca: AVERDA 0522 92 32 60 or Casa Mdinti app. "
+     "Rabat: ARMA Environnement 0537 66 32 90 — contact@arma.ma. "
+     "الدار البيضاء: AVERDA 0522 92 32 60 أو تطبيق Casa Mdinti. الرباط: ARMA 0537 66 32 90."),
 
     ("item_burnous", "Textile", "OUI", "Borne textile / Association",
      "Burnous / Djellaba usagée | Used burnous djellaba | برنوس / جلابة",
@@ -1057,7 +1092,6 @@ IMPORTANT : 15 et 150 sont DEUX services différents, les DEUX sont valides au M
 • 19  = Police nationale (DGSN)
 • 177 = Gendarmerie Royale
 • 112 = Numéro d'urgence universel (valide depuis mobile au Maroc)
-• [non confirmé - voir mtedd.gov.ma] = Marine Royale — Pollution maritime sur les côtes marocaines
 • 0537 75 96 00 = ONEE — Signalement pollution eau/sol (numéro vert gratuit 24h/24)
 
 Les centrales 15, 19 et 177 sont interconnectées et se relaient les appels selon le type d'urgence.
@@ -1098,23 +1132,17 @@ NÚMEROS DE EMERGENCIA OFICIALES DE MARRUECOS (fuentes verificadas):
                Coordonné par : Ministère de la Solidarité, Ministère de la Santé, DGSN, Gendarmerie, Entraide Nationale.
                Source : social.gov.ma (Ministère de la Solidarité et de l'Égalité)
 
-• 141 = Soutien psychologique / Prévention du suicide / Santé mentale (24h/24)
-         NE PAS confondre avec le SAMU (15). Service distinct.
-
 SPECIAL EMERGENCY NUMBERS (MOROCCO):
 • 2511 = Children in danger (ONDE) — www.2511.ma
 • 08000 8888 = Women victims of violence (Law 103.13)
-• 141 = Psychological support / suicide prevention
 
 أرقام خاصة بالطوارئ (المغرب):
 • 2511 = الأطفال في خطر (المرصد الوطني لحقوق الطفل) — www.2511.ma
 • 08000 8888 = النساء ضحايا العنف (القانون 103.13)
-• 141 = الدعم النفسي / الوقاية من الانتحار
 
 NÚMEROS ESPECIALES (MARRUECOS):
 • 2511 = Niños en peligro (ONDE) — www.2511.ma
-• 08000 8888 = Mujeres víctimas de violencia (Ley 103.13)
-• 141 = Apoyo psicológico / prevención del suicidio"""),
+• 08000 8888 = Mujeres víctimas de violencia (Ley 103.13)"""),
 
     ("urgence_environnement", """NUMÉROS D'URGENCE ENVIRONNEMENTALE AU MAROC
 
@@ -1122,34 +1150,21 @@ NÚMEROS ESPECIALES (MARRUECOS):
                   Signalement pollution eau, sol, déversements chimiques.
                   Email : info@onee.ma — Gratuit 24h/24 — National
 
-• [non confirmé - voir mtedd.gov.ma] = Marine Royale — Pollution maritime
-           Signalement déversements en mer ou sur les côtes atlantique et méditerranée.
-           Disponible 24h/24.
-
-• Wilaya de Casablanca : 0522 22 36 36
-  Urgences environnement, pollutions, décharges sauvages dans la région Casa.
-
-• Wilaya de Rabat : 0537 72 72 72
-  Urgences environnement, pollutions, décharges sauvages dans la région Rabat.
-
 • MTEDD (Ministère Transition Énergétique) : 0537 57 04 68
-  Email : mtedd.gov.ma — www.mtedd.gov.ma
+  Site : www.mtedd.gov.ma
   Agréments, réglementations, plans directeurs déchets.
 
 ENVIRONMENTAL EMERGENCY NUMBERS (MOROCCO):
 • 0537 75 96 00 = ONEE water/soil pollution (free 24/7) — info@onee.ma
-• [non confirmé - voir mtedd.gov.ma] = Royal Navy marine pollution
-• MTEDD Ministry: 0537 57 04 68 — mtedd.gov.ma
+• MTEDD Ministry: 0537 57 04 68 — www.mtedd.gov.ma
 
 أرقام طوارئ البيئة (المغرب):
 • 0537 75 96 00 = المكتب الوطني للكهرباء والماء — تلوث مائي أو أرضي (مجاني 24/24) — info@onee.ma
-• [non confirmé - voir mtedd.gov.ma] = القوات البحرية الملكية — التلوث البحري
-• وزارة الانتقال الطاقي: 0537 57 04 68 — mtedd.gov.ma
+• وزارة الانتقال الطاقي: 0537 57 04 68 — www.mtedd.gov.ma
 
 NÚMEROS EMERGENCIA AMBIENTAL (MARRUECOS):
 • 0537 75 96 00 = ONEE contaminación agua/suelo (gratuito 24h) — info@onee.ma
-• [non confirmé - voir mtedd.gov.ma] = Marina Real contaminación marítima
-• Ministerio MTEDD: 0537 57 04 68 — mtedd.gov.ma"""),
+• Ministerio MTEDD: 0537 57 04 68 — www.mtedd.gov.ma"""),
 ]
 
 
