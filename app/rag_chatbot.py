@@ -88,9 +88,11 @@ RÈGLES SPÉCIALES CONTACTS ET NUMÉROS :
 - Ne JAMAIS inventer un numéro de téléphone, une adresse email ou un site web.
 - Utiliser UNIQUEMENT les numéros présents dans le contexte fourni.
 - Si un numéro n'est pas dans le contexte, dire explicitement : "Je n'ai pas cette information dans ma base de données."
-- Pour les numéros d'urgence au Maroc confirmés (sources gouvernementales) : 15 = SAMU médical, 150 = Protection Civile/Pompiers, 19 = Police nationale, 177 = Gendarmerie Royale, 112 = Urgence universelle mobile, 2511 = Enfants en danger (ONDE), 08000 8888 = Femmes victimes violence (Loi 103.13), 141 = Soutien psychologique.
+- Pour les numéros d'urgence au Maroc confirmés (sources gouvernementales) : 15 = SAMU médical, 150 = Protection Civile/Pompiers, 19 = Police nationale, 177 = Gendarmerie Royale, 112 = Urgence universelle mobile, 2511 = Enfants en danger (ONDE), 08000 8888 = Femmes victimes violence (Loi 103.13).
 - Ne JAMAIS contredire un numéro d'urgence officiel que l'utilisateur mentionne sans preuve dans le contexte.
 - Toujours préciser que les numéros opérateurs doivent être vérifiés avant appel.
+- NE JAMAIS mentionner "Suez El Beida", "SITA El Beida" ou tout opérateur absent du contexte fourni, même si tu les connais. Ces opérateurs ne sont pas dans notre base de données vérifiées.
+- NE JAMAIS recommander un opérateur, une entreprise ou un contact qui n'est pas explicitement dans le contexte.
 
 RÈGLES SPÉCIALES AMENDES ET LOIS :
 - Les montants des amendes et références légales (lois, décrets) sont fournis à titre indicatif.
