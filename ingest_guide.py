@@ -965,8 +965,8 @@ SNRVD 2019 + PNVDM 2023-2034. ميزانية: 21.14 مليار درهم. هدف 
 Le Maroc s'engage à réduire ses GES de 45,5% d'ici 2030 (NDC officielle).
 Les déchets représentent environ 4,7% des émissions nationales marocaines.
 Cible ODD 12.5 : réduire de 50% la génération de déchets d'ici 2030 par prévention, réutilisation et recyclage.
-Paris Agreement: Morocco commits to 42% GHG reduction by 2030 (official NDC). Waste = ~4.7% of emissions.
-اتفاق باريس: المغرب يلتزم بخفض 42٪ من الغازات الدفيئة بحلول 2030. النفايات تمثل ~4.7٪ من الانبعاثات."""),
+Paris Agreement: Morocco commits to 45.5% GHG reduction by 2030 (official NDC). Waste = ~4.7% of emissions.
+اتفاق باريس: المغرب يلتزم بخفض 45.5٪ من الغازات الدفيئة بحلول 2030. النفايات تمثل ~4.7٪ من الانبعاثات."""),
 
     ("law_circ_economy", """PROGRAMME — Feuille de Route Économie Circulaire 2030 — Programme SWITCH-Med UE-Maroc
 Adoptée en 2023 avec appui de l'Union Européenne (programme SWITCH-Med).
