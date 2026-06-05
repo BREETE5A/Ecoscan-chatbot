@@ -204,14 +204,6 @@ Pour signaler un encombrant à Rabat, contacter ARMA directement.
 ARMA Environnement Rabat. Tel: 0537 66 32 90. contact@arma.ma — arma.ma
 ARMA بيئة الرباط. هاتف: 0537 66 32 90. contact@arma.ma"""),
 
-    ("op_suez", """CONTACT OPÉRATEUR RECYCLAGE — Suez El Beida (anciennement SITA El Beida)
-Rôle : Collecte ordures ménagères — Multi-villes
-Filiale groupe Suez Environnement.
-Opère à Casablanca, Rabat, Mohammedia, El Jadida, Oujda, Tétouan.
-Collecte et traitement des déchets ménagers. Filiale "SITA Maroc Recycling" pour le recyclage.
-Suez El Beida (formerly SITA El Beida) household waste. Casablanca, Rabat, Mohammedia.
-سويز البيضاء (سابقاً SITA البيضاء) لجمع النفايات المنزلية. الدار البيضاء والرباط."""),
-
     ("op_tecmed", """CONTACT OPÉRATEUR RECYCLAGE — TECMED Maroc (vérifié)
 Rôle : Collecte urbaine — Tanger, Rabat
 Téléphone : 0539 95 85 89
